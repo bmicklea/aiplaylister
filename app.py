@@ -9,7 +9,7 @@ SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 REDIRECT_URI = os.getenv("REDIRECT_URI", "https://your-render-app-name.onrender.com/callback")
 
-SCOPES = "playlist-modify-public playlist-modify-private"
+SCOPES = "playlist-modify-public playlist-modify-private user-library-read user-top-read playlist-read-private"
 
 @app.route("/")
 def index():
